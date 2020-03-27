@@ -6,6 +6,13 @@ struct student
     int WaitingTime;
     int TurnAroundTime;
 };
+void accept(struct student list[], int s);
+void display(struct student list[], int s);
+void scheduling(struct student list[], int s);
+void waitingTime(struct student list[], int n);
+void turnAroundTime(struct student list[], int n);
+
+6
 int main()
 {
     struct student data[20];
