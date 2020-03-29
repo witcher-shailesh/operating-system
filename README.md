@@ -7,4 +7,4 @@ minutes. If the two students have same remaining time so it is broken by giving 
 students with the lowest id number. Consider the longest remaining time first (LRTF) scheduling
 algorithm and calculate the average turnaround time and waiting time.
 
-<a href="https://github.com/witcher-shailesh/operating-system/blob/master/os_code.c">link text</a>
+<a href="https://github.com/witcher-shailesh/operating-system/blob/master/os_code.c">LINK FOR THE CODE</a>
