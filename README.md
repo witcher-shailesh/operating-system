@@ -6,3 +6,5 @@ these students are 2132, 2102, 2453 and the food taken time from the mess table 
 minutes. If the two students have same remaining time so it is broken by giving priority to the
 students with the lowest id number. Consider the longest remaining time first (LRTF) scheduling
 algorithm and calculate the average turnaround time and waiting time.
+
+<a href="https://github.com/witcher-shailesh/operating-system/blob/master/os_code.c">link text</a>
