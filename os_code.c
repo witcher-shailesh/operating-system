@@ -18,7 +18,7 @@ int main()
     char c='n';
     do
 	{
-    printf("Please enter the No. of Students wants to eat in mess? : ");
+    printf("Enter the No. of Students need to eat in mess? : ");
     scanf("%d", &n);
     acpt(data, n);
     scheduling(data, n);
@@ -37,23 +37,24 @@ void display(struct student lst[80], int s)
     int i,AvgWaitingTime=0,AvgTurnAroundTime=0;
 	int TotalWatingTime=0,TotalTurnAroundTime=0;
     printf("\n\n\t\t\tOutput according to LRTF\n");
-    printf("\n\t\t\t|***************************************************************|");
+   
 
-    printf("\n\t\t\t|Student id\tFoodTakenTime\tWaitingTime\tTurnAroundTime  |");
-    printf("\n\t\t\t|***************************************************************|");
+    printf("\n|Student id\tFoodTakenTime\tWaitingTime\tTurnAroundTime  |");
+  
  
     for (i = 0; i < s; i++)
     {
-        printf("\n\t\t\t|%d\t\t%d\t\t%d\t\t%d\t\t|", lst[i].Stdnt_Id, lst[i].Fd_Tkn_Tm,lst[i].Wait_Tm,lst[i].Trn_Arnd_Tm);
+        printf("\n|%d\t\t%d\t\t%d\t\t%d\t\t|", lst[i].Stdnt_Id, lst[i].Fd_Tkn_Tm,lst[i].Wait_Tm,lst[i].Trn_Arnd_Tm);
         
-        printf("\a\n\t\t\t|^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|");
+       
 		TotalWatingTime= TotalWatingTime+lst[i].Wait_Tm;
 		TotalTurnAroundTime= TotalTurnAroundTime+lst[i].Trn_Arnd_Tm;
 	} 
+    printf("\n\t\t\tTotal Turn around Time is: = %d\n\n",TotalTurnAroundTime);
 	printf("\n\n\t\t\tTotal Waiting Time is: = %d",TotalWatingTime);
-	printf("\n\t\t\tTotal Turn around Time is: = %d\n\n",TotalTurnAroundTime);
-	printf("\n\n\t\t\tAverage Waiting Time is: = %d",TotalWatingTime/s);
 	printf("\n\t\t\tAverage Turn around Time is: = %d\n\n",TotalTurnAroundTime/s);
+	printf("\n\n\t\t\tAverage Waiting Time is: = %d",TotalWatingTime/s);
+	
 }
 
 
